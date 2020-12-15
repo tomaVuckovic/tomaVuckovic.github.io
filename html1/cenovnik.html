@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="img/imgTab.png" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cenkovnik | Agape Cakes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script src='scripts/script.js'></script>
+    <script src='scripts/scriptAlert.js'></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="navbar">
+                <nav class="meni">
+                    <ul>
+                        <li><a href="proizvodi.html">Proizvodi</a></li>
+                        <li class="aktivna"><a href="cenovnik.html"> Cenovnik</a></li>
+                        <li><a href="index.html"><img id="logo1" src="img/logo.jpg"> </a></li>
+                        <li><a href="onama.html">O nama</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article class="main">
+
+
+            <div class="pozadina">
+                <div class="bg">
+
+                </div>
+                <br> <br>
+                <div id="tekstBody">
+                    <h1> Cenovnik </h1>
+                    <br>
+                    <div class="jsVreme">
+
+                        <h3>Cene proverene:</h3>
+
+                        <p id="jsVreme"></p>
+
+                        <script>
+                            var d = new Date();
+                            document.getElementById("jsVreme").innerHTML = d;
+                        </script>
+
+                    </div>
+                    <br>
+                    <h3> Pratite naše nedeljne akcije!</h3>
+                </div>
+
+                <div class="cenovnik">
+                    <div class="cenovnikImgWrap">
+                        <img class="cenovnikSlika" src="img/cenovnik.jpg">
+                    </div>
+                </div>
+                <br><br>
+                <a class="naruci" href="proizvodi.html">
+                    <h3></h3>
+                </a>
+                <button id="poruciBtn" class="poruciBtn">Poruči</button>
+
+                <script type="text/javascript">
+                    document.getElementById("poruciBtn").onclick = function () {
+                        location.href = "proizvodi.html";
+                    };
+                </script>
+
+            </div>
+            <br><br>
+        </article>
+
+
+
+
+        <footer class="footer">
+            <div class="footerWrap">
+                <ul>
+                    <li><a href="index.html"><img src="img/agapeLogo.jpg"> </a>
+                        <p> <i> Agape </i> potiče od grčke reči „ἀγάπ“ što se doslovno prevodi kao ljubav. U
+                            metaforičkom smislu, Agape se kao pojam koristi i kao sinonim svake porodične trpeze, simbol
+                            ljubavi.</p>
+                    </li>
+                    <li>
+                        <p> <b> Adresa: </b> <br> <a
+                                href="https://www.google.rs/maps/place/AGAPE+CAKES/@44.6197316,21.1824102,18.77z/data=!4m12!1m6!3m5!1s0x4750efaa97cc2b29:0x2c435f2e6c060f8b!2sPO%C5%BDAREVAC!8m2!3d44.6316037!4d21.1713307!3m4!1s0x4750ef0debc09be7:0x74775e42b172f62c!8m2!3d44.6200125!4d21.1830729" target="_blank">
+                                12000 Požarevac,<br>
+                                Sinđelićeva 28 <br></a> <b><br> <br> <br>
+                                Telefon: </b> <br> <a href="tel:0038112531040" 012/ 531-040>012/ 531-040 <br><a
+                                    href="tel:0038163335517"> 063/ 33 55 17</a><br><br><br>
+                                <b>Email:</b><br><a
+                                    href="mailto:agape.poslasticarnica@gmail.com">agape.poslasticarnica@gmail.com</a>
+                        </p>
+                        <p> </p>
+                    </li>
+                    <li>
+                        <div class="forma">
+                            <p id="footerKontakt"> <b> Kontaktirajte nas</b></p></a>
+                            <form action="mailto:20150262@student.fon.bg.ac.rs" method="POST" enctype="text/plain">
+                                <input type="text" id="ime" size="50" placeholder=" *Ime i prezime" required>
+                                <br> <br>
+                                <input type="email" id="email" size="50" placeholder=" *Email" required>
+                                <br><br>
+                                <textarea name="komentar" placeholder=" *komentar" rows="4" cols="50"
+                                    required></textarea>
+                                <br> <br> <br> <br>
+                                <input type="submit" class="button" value="Pošalji" onclick="posalji()">
+                            </form>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+
+<!-- .pozadina{
+position: relative;
+z-index: 1;
+}
+
+.pozadina .bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("img/kolaci/kolaci3blurovani.jpg") center center;
+    opacity: 0.4;
+
+
+    <aside class="aside">
+            <div class="asideBackground"> 
+                <div class="asideBg"> 
+ 
+                </div> 
+            <h3> Torte i kolači ručno pravljeni po proverenim receptima </h3>
+            
+
+            <div class="wrap">
+                <div class="child1"> <h1> Pravo,sveze voce </h1> </div>
+                <div class="child2"><h1> Najbolji majstori</h1></div>
+                <div class="child3"><h1> Najcenjeniji recepti </h1></div>
+            </div>
+        </div>
+        </aside>
+
+        <div id="fejsInsta">  <a href="https://www.facebook.com/agapecakespo" target="_blank"> <img src="img/fbLogoSVG.svg" height="50px" width="50px" > </a>
+                        <a href="https://www.instagram.com/agape_cakes_/?hl=sr" target="_blank">  <img src="img/igLogoSVG.svg" height="50px" width="50px"> </a>
+                      </div>
+
+}-->
